@@ -88,11 +88,9 @@ module.exports = kind({
 	},
 
 	shareButtons: function() {
-		var theURL = window.location.href;
-		if (!window.location.hash) { theURL += '#' + Scores.toHex(); }
-
-		this.$.facebook.set('url', theURL);
-		this.$.twitter.set('url', theURL);
+		if (!window.location.hash) { window.location.hash = Scores.toHex(); }
+		this.$.facebook.set('url', window.location.href);
+		this.$.twitter.set('url', window.location.href);
 	},
 
 	handleKeyPress: function(theSender, theEvent) {
