@@ -70,4 +70,9 @@ module.exports = kind({
 			parent.apply(this, arguments);
 		};
 	}),
+
+	hidePopup: function() {
+		if (this.$.repeater.selected()) { this.$.repeater.deselectAll(); return true; }
+		return false;
+	},
 });

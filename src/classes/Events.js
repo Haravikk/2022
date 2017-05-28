@@ -356,6 +356,8 @@ module.exports = kind.singleton({
 				this._cache = theMatchingIndices;
 				this._cacheParams = theOptions;
 			} else { this._cache = null; }
+
+			this.applyEffects(theEvent);
 			return theEvent;
 		}
 		this._cache = null;
