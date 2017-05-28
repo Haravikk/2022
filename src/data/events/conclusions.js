@@ -87,7 +87,7 @@ Events.add('conclusions', {
 	classes: 'security',
 }, {
 	text: "Although your security forces are struggling to keep crime-rates down, your people will no doubt take comfort in the fact that things could be a lot worse! Perhaps you should have invested more?",
-	requires: ['.end', {security: '<10'}, {treasury: '>=4'}, '!.done'],
+	requires: ['.end', {security: '<10'}, {security: '>=5'}, '!.done'],
 	classes: 'security',
 }, {
 	text: "It would be unfair to blame you entirely for the poor security of the UK, given that it is now mostly run by criminal gangs fighting over territory.",
