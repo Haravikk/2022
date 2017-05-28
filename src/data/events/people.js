@@ -55,6 +55,7 @@ Events.add('people', {
 
 					text: "<img src='assets/riots.png' classes='pic' height='150' /><br />Riots have been reported in major urban centres. Your advisors reliably inform you that the people are angry!",
 					requires: ['.alert', { people: '<5' }],
+					classes: 'people',
 					health: -1,
 					security: -2,
 
