@@ -141,7 +141,7 @@ module.exports = kind.singleton({
 					theHexString = theHexString.slice(1);
 				break;
 				case 'N':
-					var theHex = /N([0-9a-fA-F])+/.exec(theHexString)[1];
+					var theHex = /N([0-9a-fA-F]+)/.exec(theHexString)[1];
 					eachScore.set('value', parseInt(theHex, 16));
 					theHexString = theHexString.slice(theHex.length + 1);
 				break;
