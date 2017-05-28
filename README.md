@@ -3,7 +3,7 @@ A simple mini-game created for the UK 2017 general election, putting the player 
 
 ## Build Instructions
 ### Setup
-1. [Install npm](https://www.npmjs.com)
+1. [Install npm](https://www.npmjs.com) (also available via `brew install npm`, `port install npm` or `apt-get install npm`)
 2. Install `enyo-dev`: `sudo npm install -g enyo-dev`
 
 ### Building
