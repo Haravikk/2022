@@ -123,8 +123,10 @@ module.exports = kind({
 
 		this.$.scores.set('showing', !thePhase.hideScores);
 
-		this.setTurnButton(this.nextTurnLabel);
-		this.$.nextTurn.set('disabled', false);
+		if (!thePhase.autoAdvance) {
+			this.setTurnButton(this.nextTurnLabel);
+			this.$.nextTurn.set('disabled', false);
+		}
 	},
 
 	onNextStage: function(theSender, theStage) {
