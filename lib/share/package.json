@@ -1,0 +1,17 @@
+{
+  "name": "share",
+
+  "main": "index.js",
+  "assets": [
+     "images/**/*.*"
+  ],
+  "styles": [
+    "css/*.less",
+    "css/*.css"
+  ],
+  "moduleDir": "src",
+
+  "dependencies": {
+     "onyx": "^2.7.0"
+  }
+}

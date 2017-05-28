@@ -1,0 +1,6 @@
+{
+	"main": "TwitterButton.js",
+	"styles": [
+		"TwitterButton.less"
+	]
+}

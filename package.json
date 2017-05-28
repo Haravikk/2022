@@ -1,0 +1,15 @@
+{
+  "name": "To Twenty Twenty Two",
+  "version": "0.0.1",
+  "description": "Simple game/poll framework for rapid application building",
+  "main": "index.js",
+  "moduleDir": "src",
+  "assets": [
+    "favicon.ico",
+    "assets/**/*.*"
+  ],
+  "styles": [
+    "css/*.less",
+    "css/*.css"
+  ]
+}

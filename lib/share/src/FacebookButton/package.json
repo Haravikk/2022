@@ -1,0 +1,6 @@
+{
+	"main": "FacebookButton.js",
+	"styles": [
+		"FacebookButton.less"
+	]
+}

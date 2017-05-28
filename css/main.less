@@ -1,0 +1,176 @@
+/*
+    App-specific LESS/CSS would go here, but to make your
+    application easier to maintain, you should try to
+    minimize the use of custom CSS.
+
+    You can also override Onyx less variables here.
+*/
+
+.main {
+	background-color: #000;
+}
+
+a { color: #FFFFFF; }
+.title { text-align: center; }
+
+.event .popup .alert { background-color: #990000; }
+
+.headline {
+	font-family: serif;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.popup.box.splash {
+	width: 600px;
+	height: 600px;
+	max-width: 90%;
+	max-height: 90%;
+
+	background-color: transparent;
+	border: none;
+
+	background-image: url('../assets/splash.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+}
+
+.splash img { width: 100%; display: none; }
+
+.scores-list {
+	max-width: 1000px;
+	margin: 0 auto 5px auto;
+	text-align: center;
+}
+
+.score.wrapper {
+	width: 240px;
+	margin: 5px;
+}
+
+.score .box {
+	width: 100%;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.score .label {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 50px;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.score .icon {
+	width: 150px;
+	height: 150px;
+	border-radius: 75px;
+	z-index: 2;
+}
+
+.score .progress {
+	width: 100%;
+	border: solid 2px;
+}
+
+.score .progress .bar {
+	min-width: 2%;
+	max-width: 99.5%;
+	height: 10px;
+}
+
+.popup.box {
+	text-align: center;
+	margin: 10xp;
+	max-width: 90%;
+	max-height: 90%;
+	width: 300px;
+}
+
+.hidden {
+	-webkit-animation: 0.2s normal forwards hide;
+			animation: 0.2s normal forwards hide;
+}
+.showing {
+	-webkit-animation: 0.2s normal forwards show;
+			animation: 0.2s normal forwards show;
+}
+
+@-webkit-keyframes hide { from { transform: scale(1, 1); } to { transform: scale(0, 0); }}
+        @keyframes hide { from { transform: scale(1, 1); } to { transform: scale(0, 0); }}
+
+@-webkit-keyframes show { from { transform: scale(0, 0); } to { transform: scale(1, 1); }}
+        @keyframes show { from { transform: scale(0, 0); } to { transform: scale(1, 1); }}
+
+.popup .text {
+	margin: 4px;
+}
+
+.pic {
+	height: 150px;
+	display: block;
+	margin: 4px 4px 10px 4px;
+}
+
+span { border-radius: 5px; }
+
+.labour .progress, .popup.labour {
+	background-color: #b0002f; border-color: #b0002f;
+} .labour .progress .bar, .labour-red .popup {
+	background-color: #e4003b; border-color: #e4003b;
+}
+
+
+.education .progress, .education .icon, .popup.education {
+	background-color: #228822; border-color: #228822;
+} .education .progress .bar, .education .label {
+	background-color: #44CC44; border-color: #44CC44;
+} span.education { color: #44CC44; }
+
+.health .progress, .health .icon, .popup.health {
+	background-color: #1f7099; border-color: #1f7099;
+} .health .progress .bar, .health .label {
+	background-color: #33bbff; border-color: #33bbff;
+} span.health { color: #33bbff; }
+
+.treasury .progress, .treasury .icon, .popup.treasury {
+	background-color: #888800; border-color: #888800;
+} .treasury .progress .bar, .treasury .popup, .treasury .label {
+	background-color: #CCCC00; border-color: #CCCC00;
+} span.treasury { color: #CCCC00; }
+
+.security .progress, .security .icon, .popup.security {
+	background-color: #1b4080; border-color: #1b4080;
+} .security .progress .bar, .security .popup, .security .label {
+	background-color: #337aff; border-color: #337aff;
+} span.security { color: #337aff; }
+
+
+.people .progress, .people .icon, .popup.people {
+	background-color: #883333; border-color: #883333;
+} .people .progress .bar, .people .label {
+	background-color: #CC6666; border-color: #CC6666;
+} span.people { color: #CC6666; }
+
+.affluent .progress, .affluent .icon, .popup.affluent {
+	background-color: #994499; border-color: #994499;
+} .affluent .progress .bar, .affluent .label {
+	background-color: #CC66CC; border-color: #CC66CC;
+} span.affluent { color: #CC66CC; }
+
+.oligarchs .progress, .oligarchs .icon, .popup.oligarchs {
+	background-color: #444499; border-color: #444499;
+} .oligarchs .progress .bar, .oligarchs .label {
+	background-color: #6666CC; border-color: #6666CC;
+} span.oligarchs { color: #9999FF; }
+
+.press .progress, .press .icon, .popup.press {
+	background-color: #887722; border-color: #887722;
+} .press .progress .bar, .press .label {
+	background-color: #BBAA66; border-color: #BBAA66;
+} span.press { color: #BBAA66; }
