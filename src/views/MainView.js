@@ -28,7 +28,7 @@ var	kind = require('enyo/kind'),
 	Settings = require('../data/settings');
 
 if (!Settings.sharing) { Settings.sharing = {}; }
-if (window.location.hash == '#nosplash') { Events.setTag('.no-splash'); window.location.hash = ''; }
+if (window.location.hash == '#restarted') { Events.setTag('.restarted'); window.location.hash = ''; }
 
 module.exports = kind({
 	kind: FittableRows,
@@ -93,7 +93,7 @@ module.exports = kind({
 	}}),
 
 	newGame: function() {
-		window.location.hash = '#nosplash';
+		window.location.hash = '#restarted';
 		window.location.reload();
 	},
 

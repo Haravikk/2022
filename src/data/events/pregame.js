@@ -2,7 +2,7 @@ var	Events = require('../../classes/Events');
 
 Events.add('preGame', {
 	text: '',
-	requires: ['.splash', '!.no-splash'],
+	requires: ['.splash', '!.restarted'],
 	priority: 9999999,
 	classes: 'splash',
 	choices: 'none',
