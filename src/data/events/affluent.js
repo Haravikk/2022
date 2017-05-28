@@ -34,7 +34,7 @@ Events.add('affluent', {
 			classes: 'affluent',
 			press: -2,
 
-			choices: [{label: "I shall send a strongly worded letter at once!"}],
+			choices: [{label: "Damn them!"}],
 		}],
 	}],
 });
