@@ -14,7 +14,8 @@
 		8870AD821EBCC27200170A2E /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lib; sourceTree = "<group>"; };
 		8870AD831EBCC27200170A2E /* package.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
 		8870AD841EBCC27200170A2E /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
-		88CDE6431ED7416D006ED47F /* meta.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = meta.html; sourceTree = "<group>"; };
+		88B376C41EDC51160074B77D /* index.html.tpl */ = {isa = PBXFileReference; lastKnownFileType = text; path = index.html.tpl; sourceTree = "<group>"; };
+		88B376C61EDC62A60074B77D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -27,7 +28,8 @@
 				8870AD811EBCC27200170A2E /* index.js */,
 				8870AD821EBCC27200170A2E /* lib */,
 				8870AD831EBCC27200170A2E /* package.json */,
-				88CDE6431ED7416D006ED47F /* meta.html */,
+				88B376C41EDC51160074B77D /* index.html.tpl */,
+				88B376C61EDC62A60074B77D /* README.md */,
 				8870AD841EBCC27200170A2E /* src */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +42,7 @@
 			attributes = {
 				LastUpgradeCheck = 0820;
 			};
-			buildConfigurationList = 88F072F11EBCC24100457EED /* Build configuration list for PBXProject "Decider" */;
+			buildConfigurationList = 88F072F11EBCC24100457EED /* Build configuration list for PBXProject "To Twenty Twenty Two" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -71,7 +73,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		88F072F11EBCC24100457EED /* Build configuration list for PBXProject "Decider" */ = {
+		88F072F11EBCC24100457EED /* Build configuration list for PBXProject "To Twenty Twenty Two" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				88F072F21EBCC24100457EED /* Debug */,
