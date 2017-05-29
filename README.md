@@ -78,3 +78,7 @@ Tags can be negated by starting them with a leading exclaimation mark, e.g- `!.f
 
 ##### Special Tags
 * **.restarted**: This tag is set automatically when then New Game button is pressed, currently used to suppress the splash-screen.
+
+## Credits
+Original game concept by C. Rowlands
+Developed through Coders for Corbyn/Coders for Labour
