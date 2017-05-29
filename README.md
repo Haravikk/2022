@@ -13,11 +13,13 @@ A simple mini-game created for the UK 2017 general election, putting the player 
 2. Open `dist/index.html` in a browser (Safari & Chrome confirmed to work without issues).
 
    **Note**: Share buttons (presented at end) do not function fully when run locally, as the local URL is invalid for sharing, so the Facebook dialogue will simply close, and Twitter will not include a URL.
-3. If building for production, copy the contents of `meta.html` into the header of `dist/index.html`, there is currently no automatic way to do this. This file contains the meta-tags used to specify Twitter and Facebook cards, as well as to apply Google Analytics code to the page.
 
 ## Customisation
 ### Styling
 All key styling via CSS is located in `css/main.less`, in its current form this is just plain CSS.
+
+### Metadata
+Changes to the meta tags and other header content for the auto-generated `index.html` file should be entered into the `index.html.tpl`. Care should be taken about whitespace, as empty lines, or spaces instead of tabs for indentation may result in fatal errors with (helpfully) no cause being given.
 
 ### General Settings/Turn Structure
 General settings and turn structure are located in `data/settings.js`.
