@@ -78,7 +78,7 @@ Unless they are specified with a leading dot character (e.g- `.foo` instead of `
 Tags can be negated by starting them with a leading exclaimation mark, e.g- `!.foo`. In requirements, this identifies a tag that must **not** be present. In a setting context (events and choices) this specifies that the tag will instead be **disabled**.
 
 ##### Special Tags
-* **.restarted**: This tag is set automatically when then New Game button is pressed, currently used to suppress the splash-screen.
+* **.restarted**: This tag is set automatically when the New Game button is pressed, currently used to suppress the splash-screen at the start of the game.
 
 ## Credits
 * Original game concept by C. Rowlands
