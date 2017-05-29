@@ -8,8 +8,8 @@ A simple mini-game created for the UK 2017 general election, putting the player 
 
 ### Building
 1. Navigate to project root, i.e- `cd ~/path/to/project/root`
-* Pack the project for testing: `enyo pack --clean .`
-* Or pack for production: `enyo pack --clean -P .`
+  * Pack the project for testing: `enyo pack --clean .`
+  * Or pack for production: `enyo pack --clean -P .`
 2. Open `dist/index.html` in a browser (Safari & Chrome confirmed to work without issues).
 * **Note**: Share buttons (presented at end) do not function fully when run locally, as the local URL is invalid for sharing, so the Facebook dialogue will simply close, and Twitter will not include a URL.
 
@@ -43,20 +43,20 @@ Events are the basic building-block of the game, representing alerts or decision
 * **text** (optional): The text of the event, describing what has happened, presenting a choice to make etc.
 * **classes** (optional): CSS classes to apply to the event's popup for styling.
 * **requires** (optional): The requirements for this event to occur. This can consist of a single requirement, or an array of requirements. Requirements can be used to restrict events to specific turn stages, by requiring a tag that only applies during that stage.
-* * String requirements specify a tag (e.g- '.alert').
-* * Object requirements specify conditionals against scores. These consist of a key (the id of the score), and a condition stored within a string. For example `{people: '>10'}` indicates that the event requires that the `people` have a score greater than `10`.
+  * String requirements specify a tag (e.g- '.alert').
+  * Object requirements specify conditionals against scores. These consist of a key (the id of the score), and a condition stored within a string. For example `{people: '>10'}` indicates that the event requires that the `people` have a score greater than `10`.
 * **priority** (optional): A priority assigned to the event (default 0). Events with higher priority are always returned first (once their requirements are met).
 * **tags** (optional): Tags to apply once this event is triggered. Can be either a single tag, or an array of multiple tags. See the tags section for details on tag-naming.
 * **[score]** (optional): See below.
 * **choices** (optional): Choices to present to the user. Come in the following forms:
-* * Omitting the choices produces an alert with a default `Okay` button.
-* * A `string` value of `'none'` produces an alert event with no buttons (such as the intro splash), which can instead be tapped anywhere to dismiss.
-* * An object or array or objects in the following form:
-* * * **label**: The label to set for the button.
-* * * **tags** (optional): As above, set when the choice is selected.
-* * * **[score]** (optional): See below.
-* * * **events** (optional): One or more event objects to be added only when this choice is selected. This is particularly useful in keeping the set of events small, and avoiding the need to over-use tags to restrict them. Events specified here have an additional option:
-* * * * **delay** (optional): Specifies a delay in turns after which the event will be added. This can be used to produce decisions that have later consequences, or to prevent the event from triggering immediately if it's a match for the current turn stage.
+  Omitting the choices produces an alert with a default `Okay` button.
+  A `string` value of `'none'` produces an alert event with no buttons (such as the intro splash), which can instead be tapped anywhere to dismiss.
+  An object or array or objects in the following form:
+    * **label**: The label to set for the button.
+    * **tags** (optional): As above, set when the choice is selected.
+    * **[score]** (optional): See below.
+    * **events** (optional): One or more event objects to be added only when this choice is selected. This is particularly useful in keeping the set of events small, and avoiding the need to over-use tags to restrict them. Events specified here have an additional option:
+      * **delay** (optional): Specifies a delay in turns after which the event will be added. This can be used to produce decisions that have later consequences, or to prevent the event from triggering immediately if it's a match for the current turn stage.
 
 #### Scores
 Events and choices may specify scores ids in order to apply changes to the player's scores. For example, the following event will make the `people` happier when selected:
@@ -79,4 +79,8 @@ Unless they are specified with a leading dot character (e.g- `.foo` instead of `
 Tags can be negated by starting them with a leading exclaimation mark, e.g- `!.foo`. In requirements, this identifies a tag that must **not** be present. In a setting context (events and choices) this specifies that the tag will instead be **disabled**.
 
 ##### Special Tags
-* **.restarted**: This tag is set automatically when then New Game button is pressed, currently used to suppress the splash-screen.
+* **.restarted**: This tag is set automatically when the New Game button is pressed, currently used to suppress the splash-screen at the start of the game.
+
+## Credits
+* Original game concept by C. Rowlands
+* Developed through Coders for Corbyn/Coders for Labour
