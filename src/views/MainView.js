@@ -100,7 +100,7 @@ module.exports = kind({
 					if (this.$.popup.hasClass('showing')) {
 						if (this.choices.length === 1) { this.makeChoice(this.choices[0]); }
 						else if (this.choices.length === 0) { this.popupTapped(); }
-					} else if (!this.$.nextTurn.disabled) { this.nextTurn(); }
+					} else if (this.$.buttons.showing && !this.$.nextTurn.disabled) { this.nextTurn(); }
 				}
 			break;
 		}
@@ -109,6 +109,7 @@ module.exports = kind({
 	onEnd: function() {
 		this.$.scores.show();
 		this.$.buttons.hide();
+		this.$.nextTurn.set('disabled', true);
 		this.shareButtons();
 		this.$.share.show();
 		return false;
