@@ -169,7 +169,7 @@ module.exports = kind.singleton({
 	_sort: function() {
 		this._registry.sort(function(a, b) {
 			// Order by priority first
-			var aPriority = a || 0, bPriority = b || 0;
+			var aPriority = a.priority || 0, bPriority = b.priority || 0;
 			if (aPriority !== bPriority) { return bPriority - aPriority; }
 
 			// Otherwise put alerts first
