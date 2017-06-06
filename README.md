@@ -12,6 +12,9 @@ A simple mini-game created for the UK 2017 general election, putting the player 
   * Or pack for production: `enyo pack --clean -P .`
 2. Open `dist/index.html` in a browser (Safari & Chrome confirmed to work without issues).
 * **Note**: Share buttons (presented at end) do not function fully when run locally, as the local URL is invalid for sharing, so the Facebook dialogue will simply close, and Twitter will not include a URL.
+3. Clone this github project: `git clone https://github.com/Haravikk/2022.git 2022`
+4. Initialise the project (install libraries): `enyo init 2022`
+* **Note**: 2022 is the path where the project will be stored, modify or `cd` accordingly.
 
 ## Customisation
 ### Styling
