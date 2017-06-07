@@ -167,13 +167,14 @@ module.exports = kind.singleton({
 
 	_isSorted: false,
 	_sort: function() {
+		var self = this;
 		this._registry.sort(function(a, b) {
 			// Order by priority first
 			var aPriority = a.priority || 0, bPriority = b.priority || 0;
 			if (aPriority !== bPriority) { return bPriority - aPriority; }
 
 			// Otherwise put alerts first
-			var aIsAlert = this._isAlert(a), bIsAlert = this._isAlert(b);
+			var aIsAlert = self._isAlert(a), bIsAlert = self._isAlert(b);
 			if (aIsAlert === bIsAlert) { return 0; }
 			if (aIsAlert) { return -1; }
 			return 1;
