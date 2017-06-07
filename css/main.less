@@ -6,9 +6,7 @@
     You can also override Onyx less variables here.
 */
 
-.main {
-	background-color: #000;
-}
+.main { background-color: #FFF; }
 
 a { color: #FFFFFF; }
 .title { text-align: center; }
@@ -40,18 +38,24 @@ a { color: #FFFFFF; }
 .splash img { width: 100%; display: none; }
 
 .scores-list {
-	max-width: 1000px;
+	max-width: 1080px;
 	margin: 0 auto 5px auto;
 	text-align: center;
 }
 
 .score.wrapper {
-	width: 240px;
+	width: 260px;
 	margin: 5px;
 }
 
 .score .box {
-	width: 100%;
+	cursor: pointer;
+
+	background-color: #DDD;
+	border: 10px solid #DDD;
+	border-radius: 10px;
+
+	width: 240px;
 	text-align: center;
 	color: #FFFFFF;
 }
@@ -74,7 +78,7 @@ a { color: #FFFFFF; }
 }
 
 .score .progress {
-	width: 100%;
+	width: 236px;
 	border: solid 2px;
 }
 
@@ -128,49 +132,65 @@ span { border-radius: 5px; }
 
 .education .progress, .education .icon, .popup.education {
 	background-color: #228822; border-color: #228822;
-} .education .progress .bar, .education .label {
+} .education .progress .bar, .education .label, .score .box.education:hover {
 	background-color: #44CC44; border-color: #44CC44;
+} .score .box.education {
+	background-color: #006600; border-color: #006600;
 } span.education { color: #44CC44; }
 
 .health .progress, .health .icon, .popup.health {
 	background-color: #1f7099; border-color: #1f7099;
-} .health .progress .bar, .health .label {
+} .health .progress .bar, .health .label, .score .box.health:hover {
 	background-color: #33bbff; border-color: #33bbff;
+} .score .box.health {
+	background-color: #144b66; border-color: #144b66;
 } span.health { color: #33bbff; }
 
 .treasury .progress, .treasury .icon, .popup.treasury {
 	background-color: #888800; border-color: #888800;
-} .treasury .progress .bar, .treasury .popup, .treasury .label {
+} .treasury .progress .bar, .treasury .popup, .treasury .label, .score .box.treasury:hover {
 	background-color: #CCCC00; border-color: #CCCC00;
+} .score .box.treasury {
+	background-color: #666600; border-color: #666600;
 } span.treasury { color: #CCCC00; }
 
 .security .progress, .security .icon, .popup.security {
 	background-color: #1b4080; border-color: #1b4080;
-} .security .progress .bar, .security .popup, .security .label {
+} .security .progress .bar, .security .popup, .security .label, .score .box.security:hover {
 	background-color: #337aff; border-color: #337aff;
+} .score .box.security {
+	background-color: #10264d; border-color: #10264d;
 } span.security { color: #337aff; }
 
 
 .people .progress, .people .icon, .popup.people {
 	background-color: #883333; border-color: #883333;
-} .people .progress .bar, .people .label {
+} .people .progress .bar, .people .label, .score .box.people:hover {
 	background-color: #CC6666; border-color: #CC6666;
+} .score .box.people {
+	background-color: #661111; border-color: #661111;
 } span.people { color: #CC6666; }
 
 .affluent .progress, .affluent .icon, .popup.affluent {
 	background-color: #994499; border-color: #994499;
-} .affluent .progress .bar, .affluent .label {
+} .affluent .progress .bar, .affluent .label, .score .box.affluent:hover {
 	background-color: #CC66CC; border-color: #CC66CC;
+} .score .box.affluent {
+	background-color: #772277; border-color: #772277;
 } span.affluent { color: #CC66CC; }
 
 .oligarchs .progress, .oligarchs .icon, .popup.oligarchs {
 	background-color: #444499; border-color: #444499;
-} .oligarchs .progress .bar, .oligarchs .label {
+} .oligarchs .progress .bar, .oligarchs .label, .score .box.oligarchs:hover {
 	background-color: #6666CC; border-color: #6666CC;
+} .score .box.oligarchs {
+	background-color: #222277; border-color: #222277;
 } span.oligarchs { color: #9999FF; }
 
 .press .progress, .press .icon, .popup.press {
 	background-color: #887722; border-color: #887722;
-} .press .progress .bar, .press .label {
+} .press .progress .bar, .press .label, .score .box.press:hover {
 	background-color: #BBAA66; border-color: #BBAA66;
+} .score .box.press {
+	background-color: #665500; border-color: #665500;
 } span.press { color: #BBAA66; }
